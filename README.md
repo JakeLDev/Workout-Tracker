@@ -36,9 +36,10 @@ Can track trends over time
 draw graphs for weights, reps, calories, etc
 
 Extra features:
-    Share workouts with friends
-    Take photos of page in workout book, and upload to app
-    Progress pictures storage? can remind you where you were a month ago etc
+   - Share workouts with friends
+   - Take photos of page in workout book, and upload to app
+   - Progress pictures storage? can remind you where you were a month ago etc
+   - User selected colour themes (presets? or customizable?)
 
 
 ## Tech stack
@@ -60,3 +61,4 @@ Django (Python) + Firebase
     GymJot
     WorkoutNotebook
     LiftNotes
+    GymNotes
