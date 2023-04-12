@@ -45,8 +45,8 @@ Extra features:
 ## Tech stack
 
 Front End:
-Flutter (Dart)
-    Run via VSC (Ctrl + F5)
+React Native with Expo
+   yarn start
 
 Back End:
 Django (Python) + Firebase
