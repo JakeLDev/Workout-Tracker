@@ -21,8 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 CORS_ORIGIN_WHITELIST = [
-    "http://127.0.0.1:53910",
-    "http://localhost:53910"
+    "http://127.0.0.1:19006",
+    "http://localhost:19006"
 ]
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
