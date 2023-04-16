@@ -47,10 +47,12 @@ Extra features:
 Front End:
 React Native with Expo
    yarn start
+   http://localhost:19006/ 
 
 Back End:
 Django (Python) + Firebase
-    python manage.py runserver
+    python manage.py runserver 0.0.0.0:8000
+    http://127.0.0.1:8000/app/hellodjango 
 
 
 ### Potential Names:

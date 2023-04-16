@@ -25,7 +25,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:19006"
 ]
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', "192.168.1.77"]
 
 env = environ.Env()
 environ.Env.read_env()

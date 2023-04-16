@@ -5,13 +5,15 @@ from django.http import HttpResponse, JsonResponse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
+from random import randint
 
 # Create your views here.
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def hello_django(request):
 	print("request received!")
-	return Response({'message: Request successfully returned! Hello Django'}, status=200)
+	randomNumber = randint(1, 100)
+	return Response({'message: Request successfully returned! Hello Django: ' + str(randomNumber)}, status=200)
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
