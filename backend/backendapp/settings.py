@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     "backendcore.apps.BackendcoreConfig",
     # External
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'fireapp'
 ]
 
 MIDDLEWARE = [

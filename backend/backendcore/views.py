@@ -1,4 +1,5 @@
 import json
+import pyrebase
 from django.shortcuts import render, HttpResponse
 from django.http import HttpResponse, JsonResponse
 from rest_framework.response import Response
@@ -21,3 +22,28 @@ def IdealWeight(heightdata):
 		return JsonResponse("Ideal weight should be:"+weight+" kg",safe=False)
 	except ValueError as e:
 		return Response(e.args[0], 400)
+	
+
+firebaseConfig = {
+  "apiKey": "AIzaSyCKVCpJWcxWFDAPERot0F8xCl2aCt_gyw8",
+  "authDomain": "gymnotes-d7aac.firebaseapp.com",
+  "projectId": "gymnotes-d7aac",
+  "storageBucket": "gymnotes-d7aac.appspot.com",
+  "messagingSenderId": "853797452616",
+  "appId": "1:853797452616:web:7ea4861521c1c69e1e917d",
+  "measurementId": "G-CMKV152GVX"
+}
+
+firebase = pyrebase.initialize_app(firebaseConfig)
+auth = firebase.auth()
+database = firebase.database()
+
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def firebaseTest(request):
+	print("request received!")
+	print("Firebase Test")
+	name = database.child("Data").child("Name").get().val()
+	stack = database.child("Data").child("Stack").get().val()
+	framework = database.child("Data").child("Framework").get().val()
+	return Response({'Name: '+name+' Stack: '+stack+' Framework: '+framework}, status=200)
