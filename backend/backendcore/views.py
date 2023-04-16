@@ -27,6 +27,7 @@ def IdealWeight(heightdata):
 firebaseConfig = {
   "apiKey": "AIzaSyCKVCpJWcxWFDAPERot0F8xCl2aCt_gyw8",
   "authDomain": "gymnotes-d7aac.firebaseapp.com",
+  "databaseURL": "https://gymnotes-d7aac-default-rtdb.asia-southeast1.firebasedatabase.app",
   "projectId": "gymnotes-d7aac",
   "storageBucket": "gymnotes-d7aac.appspot.com",
   "messagingSenderId": "853797452616",
